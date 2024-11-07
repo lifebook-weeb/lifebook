@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Lifebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fffac3;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo img {
+            height: 70px;
+            max-width: 100%;
+            display: block;
+        }
+        .navbar {
+            display: flex;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .header {
+            background: url('https://youtu.be/14hR9VSCCMs?si=aLcQ3KJ6QdJ51nCo') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+        }
+            .header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+
+            
+        }
+
+        .header .btn-home .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .header .btn-home .btn:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(234, 230, 178);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .book {
+            border: 1px solid #000000;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .book button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book button:hover {
+            background-color: #218838;
+        }
+        .about-us {
+            padding: 20px;
+            background-color: rgb(148, 251, 114);
+            margin: 20px 0;
+        }
+        .contact {
+            padding: 20px;
+            background-color: #9c9c9c;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <a href="#"><img src="tu-logo.png" alt="Lifebook Logo"></a>
+        </div>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#productos">Producto</a>
+        </nav>
+    </div>
+
+    
+    <header class="content header">
+        <h2 class="title">Inicio</h2>
+        <p>
+            Bienvenido a Lifebook, una página de libros virtuales encargada de traerte a la mano el libro que necesites
+            de forma segura, sencilla y accesible para todos. Nuestra misión es llevar la lectura a la era digital de una
+            forma más fácil para todos.
+        </p>
+
+        <div class="btn-home">
+            <a href="#productos" class="btn">Saber más</a>
+            <a href="#productos" class="btn">Saber más</a>
+        </div>
+    </header>
+
+    <section class="content sau" id="productos">
+        <h2 class="title">Productos</h2>
+        <p>
+            Entre nuestros productos podrás encontrar una diversidad de géneros de libros listos para ser leídos por ti o algún conocido,
+            desde fantasía hasta novelas. Encontrarás en nuestro catálogo frescura de contenido que se irá actualizando continuamente
+            para asegurar la calidad de nuestros productos.
+        </p>
+        <div class="book">
+            <h3>Ana Karenina</h3>
+            <p>
+                El amor en la sociedad rusa de finales del siglo XX no era precisamente un asunto sencillo. Un error cometido dentro del
+                matrimonio podía salir muy caro. Esto fue lo que ocurrió con Ana cuando se enamora del conde Vronsky, estando casada
+                con Karenin. El peso social de su infidelidad hizo de su vida algo indeseable.
+                Ana Karenina es una novela que nos habla, no solo de una sociedad dura en estos temas, sino de la fuerza de una mujer,
+                su rebeldía y lucha por vivir el amor, así como su derecho a cometer errores.
+                Desafortunadamente, no siempre las decisiones tienen consecuencias positivas y Ana tendrá que enfrentar ese hecho,
+                obligándose a sí misma a apartarse del mundo que conoce.
+            </p>
+            <button onclick="window.location.href='libros/ana_karenina.pdf'">Comprar</button>
+        </div>
+        <div class="book">
+            <h3>Guerra y Paz</h3>
+            <p>
+                "Guerra y Paz" es una novela histórica que sigue a varias familias aristocráticas rusas durante las Guerras Napoleónicas. La historia abarca temas de amor, pérdida y guerra, mientras los personajes principales, como Pierre Bezukhov y Andréi Bolkonsky, enfrentan desafíos personales y sociales.
+            </p>
+            <button onclick="window.location.href='libros/guerra_y_paz.pdf'">Comprar</button>
+        </div>    
+    </section>
+
+    <section class="about-us content sau" id="nosotros">
+        <h2 class="title">Quiénes Somos</h2>
+        <p>
+            En Lifebook nos dedicamos a proporcionar una vasta colección de libros digitales a nuestros usuarios. Creemos en la importancia de la lectura en la era digital y nos esforzamos por hacerla accesible para todos. Nuestro equipo está compuesto por apasionados por los libros y la tecnología, trabajando juntos para ofrecerte una experiencia única y enriquecedora.
+        </p>
+    </section>
+
+    <section class="contact content sau" id="contacto">
+        <h2 class="title">Contacto</h2>
+        <p>
+            Servicio al cliente Lunes-Sábados de 8 am a 5 pm<br>
+            <a href="mailto:bookservicioalcliente@lifebook.com">bookservicioalcliente@lifebook.com</a>
+        </p>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Lifebook. Todos los derechos reservados.</p>
+    </div>
+
+</body>
+</html>
